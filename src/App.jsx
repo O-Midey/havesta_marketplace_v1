@@ -1,23 +1,15 @@
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Marketplace from "./pages/Marketplace";
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-import MarketPlace from './pages/MarketPlace/MarketPlace';
-import ScrollToTop from './common/scrollToTop';
-// import UserSignup from './pages/UserSignup';
-
-// import SideModal from './common/SideModal';
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path='/' element={<MarketPlace />} />
-        </Routes>
-      </BrowserRouter>
-    </>
-
-
+    <Router>
+      <Routes>
+        <Route path="/" element={<Marketplace />} />
+        {/* <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+    </Router>
   );
 }
 

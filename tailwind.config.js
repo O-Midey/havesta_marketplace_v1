@@ -18,28 +18,12 @@ export default {
       boxShadow: {
         marketCustom: "0px 4px 16.66px 0px rgba(2, 2, 2, 0.15)"
       },
-      width  : {
-        'size': "calc(50% + 25px)",
-        'marketcards': 'calc(33.33% - .725rem)',
-      },
+     
       dropShadow: {
         'custom':  "0px 4px 8px 0px rgba(0, 64, 216, 0.30)",
       },
-      backgroundImage: {
-        marketSec1: "url('/images/Rectangle 1.png')",
-      },
-      height: {
-        "max": "max-content",
-      },
-      fontFamily: {
-        primary: ["Plus Jakarta Sans"],
-      },
-
-      animation: {
-      },
+     
       
-      keyframes: {
-      },
     },
   },
 
