@@ -1,22 +1,23 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Marketplace from "./pages/Marketplace";
 import ErrorBoundary from "./components/ErrorBoundary";
+import Layout from "./components/Layout";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route
-          path="/"
-          element={
-            <ErrorBoundary>
-              <Marketplace />
-            </ErrorBoundary>
-          }
-        />
-
-        {/* <Route path="/about" element={<About />} /> */}
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route element={<Layout />}>
+          <Route
+            path="/"
+            element={
+              <ErrorBoundary>
+                <Marketplace />
+              </ErrorBoundary>
+            }
+          />
+        </Route>
       </Routes>
     </Router>
   );

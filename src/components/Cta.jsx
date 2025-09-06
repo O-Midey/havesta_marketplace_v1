@@ -1,7 +1,7 @@
 import React from "react";
 
-const Cta = () => {
-  return <div>CTA</div>;
+const HarvestaLanding = () => {
+  return <div></div>;
 };
 
-export default Cta;
+export default HarvestaLanding;

@@ -1,4 +1,3 @@
-import React from "react";
 import pricetag from "../assets/pricetag.svg";
 import refundable from "../assets/refundable.svg";
 import delivery from "../assets/delivery.svg";

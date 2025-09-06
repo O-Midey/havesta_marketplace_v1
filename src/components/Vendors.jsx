@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Search, Heart, Star, Truck, Lock } from "lucide-react";
+import { Search } from "lucide-react";
 import { vendors } from "../data/data";
 import ProductCard from "./ProductCard";
 

@@ -15,7 +15,7 @@ function ProductCard({
   const isUnavailable = isSoldOut || !isOpen;
 
   return (
-    <div className="relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+    <div className="relative bg-white rounded-xl hover:shadow-green-500 shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
       {/* Product Image */}
       <div className="relative h-48 overflow-hidden">
         <img
@@ -31,7 +31,7 @@ function ProductCard({
           <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
             <div className="text-white text-center">
               <Lock size={24} className="mx-auto mb-2" />
-              <span className="text-sm font-medium">Store Closed</span>
+              <span className="text-sm font-bold">Store Closed</span>
             </div>
           </div>
         )}

@@ -1,8 +1,18 @@
 // src/components/Header.jsx
-import React from 'react';
-import {Search, Heart, ShoppingCart, LayoutGrid , Home, Flame, TicketPercent, Megaphone, Phone } from 'lucide-react';
-import harvesterLogo from '../assets/Havesta 1 5.png';
-import noel from '../assets/noel.svg';
+import React from "react";
+import {
+  Search,
+  Heart,
+  ShoppingCart,
+  LayoutGrid,
+  Home,
+  Flame,
+  TicketPercent,
+  Megaphone,
+  Phone,
+} from "lucide-react";
+import harvesterLogo from "../assets/Havesta 1 5.png";
+import noel from "../assets/noel.svg";
 
 const Header = () => {
   return (
@@ -11,8 +21,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         {/* Logo */}
         <div className="flex items-center">
-<img src={harvesterLogo} alt="Harvester Logo" className="h-8" />
-
+          <img src={harvesterLogo} alt="Harvester Logo" className="h-8" />
         </div>
 
         {/* Search Bar */}
@@ -34,50 +43,63 @@ const Header = () => {
 
         {/* Right Side */}
         <div className="flex items-center space-x-4">
-
           {/* Wishlist */}
           <div className="flex items-center space-x-2"></div>
           {/*wishlist button with icon + counter*/}
           <div className="relative">
-          <button className="text-gray-700 hover:text-red-500 transition-colors duration-200 flex items-center space-x-1 text-xs">
-            <Heart size={25} />
-            {/*wishlist item counter*/}
-             <span className="absolute -top-1 -right-1 bg-green-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">+</span>
-          </button>
+            <button className="text-gray-700 hover:text-red-500 transition-colors duration-200 flex items-center space-x-1 text-xs">
+              <Heart size={25} />
+              {/*wishlist item counter*/}
+              <span className="absolute -top-1 -right-1 bg-green-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
+                +
+              </span>
+            </button>
           </div>
-        {/*wishlist text*/}
-        <div className="flex flex-col leading-tight">
-    <span className="text-sm font-medium">wishlist</span>
-    <span className="text-xs text-green-500">0 items </span>
-  </div>
-</div>
+          {/*wishlist text*/}
+          <div className="flex flex-col leading-tight">
+            <span className="text-sm font-medium">wishlist</span>
+            <span className="text-xs text-green-500">0 items </span>
+          </div>
+        </div>
 
-          {/* Cart */}
-          <div className="flex items-center space-x-2">
-         {/* Cart Button with Icon + Counter */}
-          <div className="relative"> 
+        {/* Cart */}
+        <div className="flex items-center space-x-2">
+          {/* Cart Button with Icon + Counter */}
+          <div className="relative">
             <button className="text-gray-700 hover:text-green-600 transition-colors duration-200 flex items-center space-x-1">
               <ShoppingCart size={25} />
               {/*cart item counter*/}
-              <span className="absolute -top-1 -right-1 bg-green-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center ">+</span>
-    </button>
-  </div>
-{/* Cart Text */}
-   <div className="flex flex-col leading-tight">
-    <span className="text-sm font-medium">Cart</span>
-    <span className="text-xs text-green-500">&#8358;100,000 </span>
-  </div>
-</div>
-
-          {/* Profile */}
-          <div className="flex items-center space-x-2">
-            <img src={noel} alt="Profile" className="w-8 h-8 rounded-full" />
-            <span className="text-sm font-medium">Noel Amobeda</span>
-            <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-            </svg>
+              <span className="absolute -top-1 -right-1 bg-green-600 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center ">
+                +
+              </span>
+            </button>
+          </div>
+          {/* Cart Text */}
+          <div className="flex flex-col leading-tight">
+            <span className="text-sm font-medium">Cart</span>
+            <span className="text-xs text-green-500">&#8358;100,000 </span>
           </div>
         </div>
+
+        {/* Profile */}
+        <div className="flex items-center space-x-2">
+          <img src={noel} alt="Profile" className="w-8 h-8 rounded-full" />
+          <span className="text-sm font-medium">Noel Amobeda</span>
+          <svg
+            className="w-4 h-4 text-gray-500"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+      </div>
 
       {/* Bottom Row */}
       <nav className="bg-white">
@@ -90,35 +112,49 @@ const Header = () => {
             </button>
 
             {/* Home */}
-            <a href="#" className="flex items-center space-x-1 text-gray-700 hover:text-green-600 transition-colors duration-200">
+            <a
+              href="#"
+              className="flex items-center space-x-1 text-gray-700 hover:text-green-600 transition-colors duration-200"
+            >
               <Home size={20} className="text-harvestaDarkGreen" />
               <span>Home</span>
             </a>
 
             {/* Bulk Deals */}
-            <a href="#" className="flex items-center space-x-1 text-gray-700 hover:text-green-600 transition-colors duration-200">
+            <a
+              href="#"
+              className="flex items-center space-x-1 text-gray-700 hover:text-green-600 transition-colors duration-200"
+            >
               <Flame size={20} className="text-red-500" />
               <span>Bulk deals</span>
             </a>
 
             {/* Promotions */}
-            <a href="#" className="flex items-center space-x-1 text-gray-700 hover:text-green-600 transition-colors duration-200">
+            <a
+              href="#"
+              className="flex items-center space-x-1 text-gray-700 hover:text-green-600 transition-colors duration-200"
+            >
               <TicketPercent size={20} className="text-yellow-500" />
               <span>Promotions</span>
             </a>
 
             {/* New Products */}
-            <a href="#" className="flex items-center space-x-1 text-gray-700 hover:text-green-600 transition-colors duration-200">
+            <a
+              href="#"
+              className="flex items-center space-x-1 text-gray-700 hover:text-green-600 transition-colors duration-200"
+            >
               <Megaphone size={20} />
               <span>New products</span>
             </a>
 
             {/* Support Center */}
-          <div className="flex items-center space-x-1 text-gray-500 text-sm ml-auto">
-            <Phone size={18} />
-             <span className="text-lg font-bold text-green-500">080HAVESTA</span>
-            <span className="text-xs font-bold">24/7 support center</span>
-          </div>
+            <div className="flex items-center space-x-1 text-gray-500 text-sm ml-auto">
+              <Phone size={18} />
+              <span className="text-lg font-bold text-green-500">
+                080HAVESTA
+              </span>
+              <span className="text-xs font-bold">24/7 support center</span>
+            </div>
           </div>
         </div>
       </nav>

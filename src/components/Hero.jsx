@@ -1,7 +1,7 @@
 // src/components/HeroBackground.jsx
-import React from 'react';
-import pattern from '../assets/pattern.png';
-import { Send } from 'lucide-react';
+import React from "react";
+import pattern from "../assets/pattern.png";
+import { Send } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -12,14 +12,11 @@ const HeroSection = () => {
         style={{
           backgroundImage: `url(${pattern})`, // Use the imported pattern
           backgroundRepeat: "repeat",
-          backgroundRepeat: "repeat",
           backgroundSize: "20%",
         }}
       ></div>
 
-
-
-       {/* Green Overlay */}
+      {/* Green Overlay */}
       <div className="absolute inset-0 bg-green-200 opacity-70"></div>
 
       {/* Content Layer */}
@@ -27,16 +24,21 @@ const HeroSection = () => {
         {/* Left: Text & Form */}
         <div className="lg:w-1/2 space-y-6">
           <h1 className="text-3xl md:text-6xl font-bold text-black-50 leading-tight">
-            Don’t miss our daily<br />
+            Don’t miss our daily
+            <br />
             amazing deals.
           </h1>
           <p className="text-lg font-bold text-black-50">
-            Save up to <span className="text-green-600 font-semibold">60% off</span> on your first order
+            Save up to{" "}
+            <span className="text-green-600 font-semibold">60% off</span> on
+            your first order
           </p>
 
           {/* Email Subscription Form */}
           <div className="flex flex-col sm:flex-row gap-3 max-w-md items-center">
-            <div className="relative flex-1"> {/* Relative container */}
+            <div className="relative flex-1">
+              {" "}
+              {/* Relative container */}
               <input
                 type="email"
                 placeholder="Enter your email"
