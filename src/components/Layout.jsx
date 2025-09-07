@@ -12,9 +12,11 @@ const Layout = () => {
       <main>
         <Outlet />
       </main>
-      <Banner />
-      <Features />
-      <Footer />
+      <footer>
+        <Banner />
+        <Features />
+        <Footer />
+      </footer>
     </>
   );
 };
