@@ -15,7 +15,7 @@ function ProductCard({
   const isUnavailable = isSoldOut || !isOpen;
 
   return (
-    <div className="relative bg-white rounded-xl hover:shadow-green-500 shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+    <div className="relative bg-white rounded-xl hover:shadow-green-500 cursor-pointer shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
       {/* Product Image */}
       <div className="relative h-48 overflow-hidden">
         <img

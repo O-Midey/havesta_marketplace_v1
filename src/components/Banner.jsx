@@ -2,11 +2,23 @@ import React from "react";
 import appstore from "../assets/App Store.svg";
 import playstore from "../assets/Play Store.svg";
 import phones from "../assets/phones.svg";
-
+import pattern from "../assets/pattern.png";
 const Banner = () => {
   return (
-    <div className="bg-[#01BE724D] flex flex-col py-10 px-16">
-      <div className="m-auto flex items-center max-w-7xl w-full justify-center">
+    <div className="relative border-2 flex flex-col py-10 px-16 relatve">
+      {/* Pattern Layer */}
+      <div
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `url(${pattern})`, // Use the imported pattern
+          backgroundRepeat: "repeat",
+          backgroundSize: "20%",
+        }}
+      ></div>
+
+      {/* Green Overlay */}
+      <div className="absolute inset-0 bg-green-200 opacity-70"></div>
+      <div className="m-auto flex items-center max-w-7xl w-full justify-center relative z-10">
         {/* text area */}
         <div className="">
           <h1 className="text-[#000000] font-bold text-5xl max-w-lg mb-6 ">

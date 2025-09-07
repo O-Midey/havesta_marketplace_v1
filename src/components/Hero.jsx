@@ -1,11 +1,10 @@
 // src/components/HeroBackground.jsx
 import React from "react";
 import pattern from "../assets/pattern.png";
-import { Send } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-[500px] bg-[#E3F9EC]">
+    <section className="relative w-full h-[500px] bg-[#E3F9EC] ">
       {/* Pattern Layer */}
       <div
         className="absolute inset-0"
@@ -35,21 +34,17 @@ const HeroSection = () => {
           </p>
 
           {/* Email Subscription Form */}
-          <div className="flex flex-col sm:flex-row gap-3 max-w-md items-center">
+          <div className="flex flex-col sm:flex-row max-w-md items-center">
             <div className="relative flex-1">
               {" "}
               {/* Relative container */}
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 pr-10" // Added pr-10
-              />
-              <Send
-                className="absolute top-1/2 right-3 -translate-y-1/2 text-gray-500" // Absolute positioning
-                size={20}
+                className="w-full px-4 py-3 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-green-500 pr-10" // Added pr-10
               />
             </div>
-            <button className="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition-colors">
+            <button className="bg-green-600 text-white px-6 py-3 rounded-r-md hover:bg-green-700 transition-colors">
               Subscribe
             </button>
           </div>
