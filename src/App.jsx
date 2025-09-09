@@ -17,7 +17,15 @@ function App() {
               </ErrorBoundary>
             }
           />
-          <Route path="/" element={<VendorStoreFront />} />
+
+          <Route
+            path="/"
+            element={
+              <ErrorBoundary>
+                <VendorStoreFront />
+              </ErrorBoundary>
+            }
+          />
         </Route>
       </Routes>
     </Router>
