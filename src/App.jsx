@@ -1,23 +1,34 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Marketplace from "./pages/Marketplace";
+import ErrorBoundary from "./components/ErrorBoundary";
+import Layout from "./components/Layout";
+import VendorStoreFront from "./pages/VendorStoreFront";
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
-import MarketPlace from './pages/MarketPlace/MarketPlace';
-import ScrollToTop from './common/scrollToTop';
-// import UserSignup from './pages/UserSignup';
-
-// import SideModal from './common/SideModal';
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path='/' element={<MarketPlace />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <Router>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route
+            path="/m"
+            element={
+              <ErrorBoundary>
+                <Marketplace />
+              </ErrorBoundary>
+            }
+          />
 
-
+          <Route
+            path="/"
+            element={
+              <ErrorBoundary>
+                <VendorStoreFront />
+              </ErrorBoundary>
+            }
+          />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 
