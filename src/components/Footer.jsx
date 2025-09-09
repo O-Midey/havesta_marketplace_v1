@@ -49,12 +49,12 @@ const Footer = () => {
     {
       id: 1,
       icon: <FaPhoneAlt />,
-      content: "07011096453",
+      content: "080HAVESTA",
     },
     {
       id: 2,
       icon: <TbMail />,
-      content: "harvestahq.com",
+      content: "hello@havesta.com",
     },
   ];
 
@@ -77,6 +77,7 @@ const Footer = () => {
     },
   ];
   return (
+    // correct logo and links and socials image
     <div className="bg-black text-white">
       {/* upper part */}
       <div className="flex justify-between gap-5 py-14 px-12 w-full max-w-[90rem] m-auto">
@@ -155,7 +156,7 @@ const Footer = () => {
       <div className="flex items-center justify-center py-6 bg-[#00150D] ">
         <p className="text-[#909DA4] text-sm">
           © Copyright 2024{"  "}
-          <span className="text-white"> Designed By Noel Amobeda</span>
+          <span className="text-white">.All Rights Reserved</span>
         </p>
       </div>
     </div>

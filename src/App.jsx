@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Marketplace from "./pages/Marketplace";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Layout from "./components/Layout";
+import VendorStoreFront from "./pages/VendorStoreFront";
 
 function App() {
   return (
@@ -9,13 +10,14 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route
-            path="/"
+            path="/m"
             element={
               <ErrorBoundary>
                 <Marketplace />
               </ErrorBoundary>
             }
           />
+          <Route path="/" element={<VendorStoreFront />} />
         </Route>
       </Routes>
     </Router>
