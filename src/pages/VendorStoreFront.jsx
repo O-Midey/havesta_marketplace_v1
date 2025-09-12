@@ -1,8 +1,8 @@
-import React from "react";
 import VendorHome from "../components/VendorComponents/VendorHome";
 import VendorExplore from "../components/VendorComponents/VendorExplore";
 import VendorPromoDeals from "../components/VendorComponents/VendorPromoDeals";
-import VendorFood from "../components/VendorComponents/VendorFood";
+import VendorCategories from "../components/VendorComponents/VendorCategories";
+import StoreModal from "../components/Modals/StoreModal";
 
 const VendorStoreFront = () => {
   return (
@@ -10,7 +10,8 @@ const VendorStoreFront = () => {
       <VendorHome />
       <VendorExplore />
       <VendorPromoDeals />
-      <VendorFood />
+      <VendorCategories />
+      <StoreModal />
     </div>
   );
 };
