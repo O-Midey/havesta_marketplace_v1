@@ -2,6 +2,14 @@ import woman from "../assets/woman.svg";
 import man from "../assets/man.svg";
 import lady from "../assets/lady.svg";
 import veggiewoman from "../assets/veggiewoman.svg";
+import chicken from "../assets/chicken.svg";
+import dryvegetable from "../assets/dryvegetable.svg";
+import apple from "../assets/apple.svg";
+import tubers from "../assets/tubers.svg";
+import rice from "../assets/rice.svg";
+import palmoil from "../assets/palmoil.svg";
+import soupcondiment from "../assets/soupcondiment.svg";
+
 
 // Image imports for Vendor Products
 import brocolli from "../assets/brocolli.svg";
@@ -211,6 +219,7 @@ export const promotions = [
     isSoldOut: true,
   },
 ];
+
 
 export const vendorProductData = {
   "Frozen Food": [
