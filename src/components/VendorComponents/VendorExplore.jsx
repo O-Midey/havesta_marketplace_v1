@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import veggiewoman from "../../assets/veggiewoman.svg";
+// import veggiewoman from "../../assets/veggiewoman.svg";
 import chicken from "../../assets/chicken.svg";
 import dryvegetable from "../../assets/dryvegetable.svg";
 import apple from "../../assets/apple.svg";
