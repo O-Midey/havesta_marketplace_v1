@@ -29,14 +29,40 @@ const Footer = () => {
       name: "News",
       link: "",
     },
+
     {
       id: 3,
-      name: "Partner",
+      name: "Contact",
       link: "",
     },
     {
       id: 4,
-      name: "Contact",
+      name: "Riders",
+      link: "",
+    },
+    {
+      id: 5,
+      name: "Vendors",
+      link: "",
+    },
+    {
+      id: 6,
+      name: "Careers",
+      link: "",
+    },
+    {
+      id: 7,
+      name: "Marketplace",
+      link: "",
+    },
+    {
+      id: 8,
+      name: "Terms of use",
+      link: "",
+    },
+    {
+      id: 9,
+      name: "Privacy Policy",
       link: "",
     },
   ];
@@ -94,15 +120,21 @@ const Footer = () => {
             consumers.
           </p>
         </div>
+
+        {/* Featured Links */}
         <div className="">
           <h1 className="font-[500] text-lg h-8 mb-4 w-36 xl:text-xl">
             Featured Links
           </h1>
-          <div className="flex flex-col gap-2 font-light text-sm xl:text-base ">
+          {/* Links */}
+          <div className=" grid grid-cols-2 gap-2 gap-y-3 font-light text-sm xl:text-base ">
             {links.map((link) => (
               <div key={link.id} className="flex items-center gap-2">
                 <FaGreaterThan className="w-2 text-harvestaLightGreen" />
-                <NavLink to={link.link} className={`cursor-pointer`}>
+                <NavLink
+                  to={link.link}
+                  className={`cursor-pointer transition transform duration-300   hover:text-harvestaLightGreen hover:scale-105`}
+                >
                   {link.name}
                 </NavLink>
               </div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import { Search } from "lucide-react";
 import { vendors } from "../data/data";
 import ProductCard from "./ProductCard";
@@ -8,16 +8,18 @@ export default function Vendors() {
   const [visibleVendors, setVisibleVendors] = useState(9);
   const [vendorData, setVendorData] = useState(vendors);
 
-  const handleToggleFavorite = (vendorId) => {
-    setVendorData((prevVendors) =>
-      prevVendors.map((vendor) =>
-        vendor.id === vendorId
-          ? { ...vendor, isFavorite: !vendor.isFavorite }
-          : vendor
-      )
-    );
-  };
-
+  const handleToggleFavorite = useCallback(
+    (vendorId) => {
+      setVendorData((prevVendors) =>
+        prevVendors.map((vendor) =>
+          vendor.id === vendorId
+            ? { ...vendor, isFavorite: !vendor.isFavorite }
+            : vendor
+        )
+      );
+    },
+    [setVendorData]
+  );
   const handleShowMore = () => {
     setVisibleVendors((prev) => Math.min(prev + 6, vendorData.length));
   };
