@@ -101,7 +101,7 @@ const VendorCategories = () => {
   );
 
   return (
-    <div className="max-w-7xl mx-auto p-6 bg-gray-50 min-h-screen">
+    <div className="max-w-7xl mx-[64px] py-6  min-h-screen">
       {/* Render Categories */}
       {Object.entries(vendorProductData).map(([category, products]) => (
         <CategorySection
