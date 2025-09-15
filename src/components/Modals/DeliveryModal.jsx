@@ -22,6 +22,7 @@ const DeliveryModal = ({ isOpen, onClose }) => {
       isOpen={isOpen}
       onClose={handleClose}
       title="Select a delivery address"
+      className="min-w-[800px] max-h-[90vh]"
     >
       <div className="flex flex-col h-[400px] min-w-[800px] w-full relative overflow-hidden">
         <AnimatePresence mode="popLayout">
