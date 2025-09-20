@@ -1,12 +1,25 @@
-# React + Vite
+🌱 Havesta Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Havesta Marketplace is an AgriTech platform that connects farmers, vendors, and consumers — making it easier to buy and sell fresh produce online. Built with a focus on user experience, performance, and accessibility, the marketplace aims to empower local farmers and streamline agricultural trade.
 
-Currently, two official plugins are available:
+🚧 Note:
+	•	This project is still a work in progress.
+	•	Currently optimized for desktop only (mobile support coming later).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⸻
 
-## Expanding the ESLint configuration
+⚡ Tech Stack
+	•	React – Component-based UI development
+	•	Tailwind CSS – Styling and responsiveness
+	•	JavaScript (ES6+) – Core functionality
+	•	(Future plans: add authentication, payments, and backend integration)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⸻
+
+📌 Features (In Progress)
+	•	✅ Responsive marketplace interface (desktop-first)
+	•	✅ Vendor & consumer product listings
+	•	⏳ User authentication (in development)
+	•	⏳ Cart & checkout system
+	•	⏳ Payment integration
+	•	⏳ Admin dashboard for vendors/farmers
